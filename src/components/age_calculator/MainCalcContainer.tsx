@@ -149,10 +149,11 @@ export default function () {
 	};
 
 	return (
-		<section className="rounded-t-xl rounded-bl-xl rounded-br-[5rem] bg-white px-7 py-10 mobile:px-10 mobile:py-10 laptop:rounded-br-[10rem]">
+		<div className="rounded-t-xl rounded-bl-xl rounded-br-[5rem] bg-white px-7 py-10 mobile:px-10 mobile:py-10 laptop:rounded-br-[10rem]">
 			<form onSubmit={formSubmit}>
 				<div className="flex flex-row items-center justify-center gap-4 laptop:justify-normal laptop:gap-5">
 					<InputFieldWithTopLabel
+						id={"dayInput"}
 						labelErrClr={errMsgs.dayInput.labelStyle}
 						borderErrClr={errMsgs.dayInput.borderStyle}
 						label="DAY"
@@ -164,6 +165,7 @@ export default function () {
 						errMessage={errMsgs.dayInput.message}
 					/>
 					<InputFieldWithTopLabel
+						id={"monthInput"}
 						labelErrClr={errMsgs.monthInput.labelStyle}
 						borderErrClr={errMsgs.monthInput.borderStyle}
 						label="MONTH"
@@ -175,6 +177,7 @@ export default function () {
 						errMessage={errMsgs.monthInput.message}
 					/>
 					<InputFieldWithTopLabel
+						id={"yearInput"}
 						labelErrClr={errMsgs.yearInput.labelStyle}
 						borderErrClr={errMsgs.yearInput.borderStyle}
 						label="YEAR"
@@ -202,11 +205,11 @@ export default function () {
 				</div>
 			</form>
 
-			<section>
+			<div>
 				<AgeResult refer={yearsDispScope} result={detailedAge.ageInYears} label="years" />
 				<AgeResult refer={monthsDispScope} result={detailedAge.ageInMonths} label="months" />
 				<AgeResult refer={daysDispScope} result={detailedAge.ageInDays} label="days" />
-			</section>
-		</section>
+			</div>
+		</div>
 	);
 }
