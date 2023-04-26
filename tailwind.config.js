@@ -17,6 +17,7 @@ export default {
 			screens: {
 				laptop: "650px",
 				mobile: "500px",
+				"mobile-xs": "400px",
 			},
 		},
 	},
