@@ -1,5 +1,2 @@
-# age-calculator-app-source-code
+# Age Calculator App - FrontendMentor.io
 My solution code for the age calculator app in frontend mentor
-
-## Live Website
-Link: <a href="https://age-calculator-app-bvv.netlify.app/" target="_blank">Link</a>
